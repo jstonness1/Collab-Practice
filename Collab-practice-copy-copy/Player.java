@@ -15,5 +15,41 @@ public class Player extends Actor
     public void act()
     {
         // Add your action code here.
+        if (Greenfoot.isKeyDown("left"))
+        {
+            setRotation(180);
+            move(15);
+        }
+        if (Greenfoot.isKeyDown("right"))
+        {
+            setRotation(0);
+            move(15);
+        }
+        if (Greenfoot.isKeyDown("down"))
+        {
+            setRotation(90);
+            move(15);
+        }
+        if (Greenfoot.isKeyDown("up"))
+        {
+            setRotation(270);
+            move(15);
+        }
+        if (Greenfoot.isKeyDown("down") && Greenfoot.isKeyDown("right"))
+        {
+            setRotation(45);
+        }
+        if (Greenfoot.isKeyDown("down") && Greenfoot.isKeyDown("left"))
+        {
+            setRotation(135);
+        }
+        if (Greenfoot.isKeyDown("up") && Greenfoot.isKeyDown("right"))
+        {
+            setRotation(315);
+        }
+        if (Greenfoot.isKeyDown("up") && Greenfoot.isKeyDown("left"))
+        {
+            setRotation(225);
+        }
     }
 }
