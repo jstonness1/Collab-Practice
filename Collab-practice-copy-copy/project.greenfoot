@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.Player.image=Rigby.png
+class.Player.image=gang.png
 dependency1.from=MyWorld
 dependency1.to=Player
 dependency1.type=UsesDependency
