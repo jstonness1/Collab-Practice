@@ -15,22 +15,22 @@ public class Player extends Actor
     public void act()
     {
         // Add your action code here.
-        if (Greenfoot.isKeyDown("left"))
+        if (Greenfoot.isKeyDown("a"))
         {
             setRotation(180);
             move(15);
         }
-        if (Greenfoot.isKeyDown("right"))
+        if (Greenfoot.isKeyDown("d"))
         {
             setRotation(0);
             move(15);
         }
-        if (Greenfoot.isKeyDown("down"))
+        if (Greenfoot.isKeyDown("s"))
         {
             setRotation(90);
             move(15);
         }
-        if (Greenfoot.isKeyDown("up"))
+        if (Greenfoot.isKeyDown("w"))
         {
             setRotation(270);
             move(15);
@@ -50,6 +50,22 @@ public class Player extends Actor
         if (Greenfoot.isKeyDown("up") && Greenfoot.isKeyDown("left"))
         {
             setRotation(225);
+        }
+        if (Greenfoot.isKeyDown("right"))
+        {
+            setRotation(90);
+        }
+        if (Greenfoot.isKeyDown("down"))
+        {
+            setRotation(0);
+        }
+        if (Greenfoot.isKeyDown("up"))
+        {
+            setRotation(180);
+        }
+        if (Greenfoot.isKeyDown("left"))
+        {
+            setRotation(270);
         }
     }
 }
